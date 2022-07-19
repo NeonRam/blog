@@ -17,6 +17,7 @@ function App() {
       <Routes>
             <Route path='/' element={<Blog/>}/>
             <Route path='Pokemon' element={<Pokemon/>}/>
+            <Route path='Mario + Rabbids' element={<MarioRabbids/>}/>
       </Routes>
   );
 }
