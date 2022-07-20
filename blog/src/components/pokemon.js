@@ -7,15 +7,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './miscellaneous/Header';
 import MainFeaturedPost from './miscellaneous/MainFeaturedPost';
 import FeaturedPost from './miscellaneous/FeaturedPost';
-import Main from './miscellaneous/Main';
 import Sidebar from './miscellaneous/Sidebar';
 import Footer from './miscellaneous/Footer';
-import post1 from './miscellaneous/blog-post.1.md';
-import post2 from './miscellaneous/blog-post.2.md';
-import post3 from './miscellaneous/blog-post.3.md';
 
 const sections = [
-  { title: 'Home', url: '#' },
+  { title: 'Home', url: './blog' },
   { title: 'Tales of Berseria', url: '#' },
   { title: 'Mario + Rabbids', url: '#' },
   { title: 'Fire Emblem', url: '#' },
@@ -55,8 +51,6 @@ const featuredPosts = [
   },
 ];
 
-const posts = [post1, post2, post3];
-
 const sidebar = {
   title: 'About',
   description:
@@ -86,7 +80,7 @@ export default function Pokemon() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="Pokemon" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -95,7 +89,6 @@ export default function Pokemon() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

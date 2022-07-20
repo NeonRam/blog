@@ -13,7 +13,7 @@ import Footer from './miscellaneous/Footer';
 const sections = [
   {title: 'Pokemon', url: './pokemon'},
   { title: 'Tales of Berseria', url: '#' },
-  { title: 'Mario + Rabbids', url: '#' },
+  { title: 'Mario + Rabbids', url: './mariorabbids' },
   { title: 'Fire Emblem', url: '#' },
   { title: 'Shin Megami Tensei', url: '#' },
   { title: 'Octopath Traveler', url: '#' },

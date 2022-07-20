@@ -1,6 +1,7 @@
 import './App.css';
 import Blog from './components/blog';
 import Pokemon from './components/pokemon';
+import MarioRabbids from './components/mariorabbids';
 import ReactDom from 'react-dom/client';
 import {Browser, Routes, Route, BrowserRouter} from 'react-router-dom';
 
